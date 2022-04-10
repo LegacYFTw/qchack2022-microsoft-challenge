@@ -34,7 +34,7 @@ Final Cost: (-2.4016804144028843+0j)
 
 ![target.png](figures/target.png)
 
-VQT approximation
+VQT results
 
 Final Entropy: 1.950094553660756
 
@@ -44,7 +44,7 @@ Final Cost: -2.287785137969307
 
 ![vqt.png](figures/vqt.png)
 
-Noise induced VQT model results
+Noise induced VQT results
 
 Final Entropy: 1.950102534136878
 
