@@ -18,55 +18,11 @@ A noise-induced VQT for 3 qubit SK model can be found in  the folder [Part2](./P
 
 
 ### Blog post for the free form project
-#The Variational Quantum Thermalizer Algorithm
+We have written a blog post elucidatiing our project.
+The blog post can be found here: https://legacyftw.github.io/blog/vqt/vqt.md/
 
 
-## Theory
-Variational Quantum Thermalizer(VQT) is a natural generalization of the ubiquitous Variational Quantum Eigensolver Alogorithm(VQE).
 
-VQT prepares the thermal state of a given hamiltionian, defined as:
-$$
-\rho_\text{thermal} \ = \ \frac{e^{- H \beta / k_B}}{\text{Tr}(e^{- H \beta / k_B})}
-$$
-
-where $H$ is the is the Hamiltonian of the system, $\beta \ = \ 1/T$ , where T 
-is the temperature of our system.
-
-
-##Simulation
-
-For our case, we run the 3 qubit Sherrington Kirkpatrick (SK) model of spin glass. This is a classical
-spin model with all-to-all couplings between the n spins.
-
-The SK Hamiltonian over n spins is given as: 
-
-$$
-H(x)=-1/\sqrt{n} \sum_{i<j} w_{i,j}x_ix_j
-$$
- where $x_i\in\{\pm 1\}$ is the configuration of spins and $w_{i,j}\in\{\pm 1\}$ is a disorder chosen independently and uniformly at random.
-
-
-```
-## Noise modeling
-
-Then, we added a depolarizing noise to each qubit in order to have a finer control of the noise across the circuit. We did this by creating a noise error for the custom instruction used in the ansatz.
-
-```python
-from qiskit.providers.aer.noise import NoiseModel
-from qiskit.providers.aer.noise import QuantumError, ReadoutError
-
-from qiskit.providers.aer.noise import depolarizing_error
-
-# Create an empty noise model
-noise_model = NoiseModel()
-
-# Add depolarizing error to all single qubit unitary gate
-error = depolarizing_error(0.1, 1)
-noise_model.add_all_qubit_quantum_error(error, ['add_u_gate'])
-
-# Print noise model info
-print(noise_model)
-```
 
 ## Results
 Target state
