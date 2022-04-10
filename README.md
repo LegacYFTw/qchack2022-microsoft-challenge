@@ -18,7 +18,7 @@ A noise-induced VQT for 3 qubit SK model can be found in  the folder [Part2](./P
 
 
 ### Blog post for the free form project
-We have written a blog post elucidatiing our project.
+We have written a blog post elucidating our project.
 The blog post can be found here: https://legacyftw.github.io/blog/vqt/vqt.md/
 
 
