@@ -12,9 +12,18 @@ Solutions to Part 1 of this challenge can be found in the folder [Part1](./Part1
 For part 2, we have implemented the Variational Quantum Thermalizer(VQT) and noise-induced VQT for 3 qubit Sherrington Kirkpatrick (SK) model of spin glass. We try to reach the thermal state of the SK model for temperature=1
  
 VQT for 3 qubit SK model can be found in  the folder [Part2](./Part2) in the file 3qubitSK_Model_VQT.ipynb
+![image](https://user-images.githubusercontent.com/47495245/162619405-156aad5a-c06d-4021-8748-d5563da4c85a.png)
+Expectation Value: (-0.5033432861349194+0j)
+Entropy: (1.898337128267965-0j)
+Final Cost: (-2.4016804144028843+0j)
 
 A noise-induced VQT for 3 qubit SK model can be found in  the folder [Part2](./Part2) in the file Noisy3qubitSK_Model_VQT.ipynb
 
+
+![image](https://user-images.githubusercontent.com/47495245/162619434-3c6f2faa-452d-4bbd-bacc-8b30165a14dd.png)
+Final Entropy: 1.950094553660756
+Final Expectation Value: -0.3376905843085512
+Final Cost: -2.287785137969307
 
 
 ### Blog post for the free form project
